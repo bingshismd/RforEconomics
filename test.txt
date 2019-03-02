@@ -1,1 +1,67 @@
-This is my first try to use Git and GitHub.
+SMD@SMD MINGW64 /e/Git_Try
+$ cd /RforEconomics
+bash: cd: /RforEconomics: No such file or directory
+
+SMD@SMD MINGW64 /e/Git_Try
+$ cd RforEconomics/
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ ls
+README.md
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ ls
+README.md  test.txt
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git add test.txt
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git commit -m "First comment" text.txt
+error: pathspec 'text.txt' did not match any file(s) known to git
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git commit -m "first comment" test.txt
+[master 81c3287] first comment
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ ^C
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': bingshismd
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/bingshismd/RforEconomics.git/'
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 79.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/bingshismd/RforEconomics.git
+   a71ce6e..81c3287  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+SMD@SMD MINGW64 /e/Git_Try/RforEconomics (master)
+$ git
